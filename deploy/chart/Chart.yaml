@@ -1,0 +1,13 @@
+---
+name: "magento"
+version: "1.9.3.1"
+description: "A Magento distribution, without the Magento stack."
+keywords:
+  - "Magento"
+home: "https://github.com/OpenMage/magento-mirror"
+sources:
+  - "https://github.com/OpenMage/magento-mirror"
+maintainers: 
+  - name: "Andrew Howden"
+    email: "hello[at]andrewhowden.com"
+engine: gotpl 

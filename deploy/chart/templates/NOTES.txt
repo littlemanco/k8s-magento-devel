@@ -1,0 +1,10 @@
+==========
+magento
+==========
+
+Accessing magento
+--------------------
+
+// Todo: Fill this in.
+
+For more information, see the README.
