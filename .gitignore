@@ -1,0 +1,2 @@
+# Do not track dependencies for helm
+/deploy/chart/charts
