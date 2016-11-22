@@ -1,5 +1,5 @@
 ---
 dependencies:
-  - name: "stable/mysq"
+  - name: "mysql"
     version: "0.2.1"
     repository: "https://storage.googleapis.com/kubernetes-charts/"
