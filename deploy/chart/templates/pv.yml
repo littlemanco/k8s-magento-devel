@@ -1,0 +1,14 @@
+---
+apiVersion: "v1"
+kind: "PersistentVolume"
+metadata:
+  name: "php"
+spec:
+  capacity:
+    storage: "2Gi"
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: "Retain"
+  nfs:
+    path: "/var/export/magento/"
+    server: "192.168.99.1"
