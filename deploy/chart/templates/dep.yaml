@@ -23,13 +23,9 @@ spec:
         application: "apache2"
         role: "webserver"
     spec:
-      # volumes:
-      # - name: "webserver-etc-conf-d"
-      # configMap:
-      #   name: "webserver-etc-conf-d"
-      # - name: "webserver-data"
-      #   hostPath:
-      #     path: /data/webserver/
+      volumes:
+        - name: "application"
+          persistentVolumeClaim: "php"
       containers:
         - name: "apache2"
           # env:
@@ -54,13 +50,9 @@ spec:
             - containerPort: 80
               protocol: "TCP"
               name: "http"
-          # volumeMounts:
-          # - name: "webserver-etc-conf-d"
-          #   readOnly: true
-          #   mountPath: "/etc/webserver/conf.d"
-          # - name: "webserver-data
-          #   readOnly: false
-          #   mountPath: "/data"
+          volumeMounts:
+            - name: "php"
+              mountPath: "/var/www"
           livenessProbe:
             tcpSocket:
               port: 80
