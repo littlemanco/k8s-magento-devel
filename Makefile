@@ -31,4 +31,5 @@ help: ## Show this menu
 	@grep -E '^[a-zA-Z_-%]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "    \033[32m%-30s\033[0m %s\n", $$1, $$2}'
 
 deploy: ## Deploy the chart
-	helm upgrade --install chart --set="mysql.mysqlRootPassword=$(pass show magento.dev/mysql/root)" deploy/chart/
+	@if [[ -z "${MAGENTO_PATH}" ]]; then echo "Please supply the MAGENTO_PATH environment variable" 1>&2 && exit 1; fi;
+	helm upgrade --install chart --set="mysql.mysqlRootPassword=$(pass show magento.dev/mysql/root),hostPath=${MAGENTO_PATH}" deploy/chart/

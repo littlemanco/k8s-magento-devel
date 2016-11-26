@@ -2,3 +2,7 @@
 # Values that override the dependency defaults
 mysql:
   imageTag: "5.7.16"
+
+## Which directory will be mounted into the apache container at runtime
+## default: /mnt/development
+# hostPath:

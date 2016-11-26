@@ -25,13 +25,14 @@ spec:
     spec:
       volumes:
         - name: "application"
-          persistentVolumeClaim: "php"
+          hostPath:
+            path: {{ default "/mnt/development" .Values.hostPath | quote }}
       containers:
         - name: "apache2"
           # env:
           # - name: "FOO"
           #   value: "BAR"
-          image: "quay.io/littlemanco/apache-php:f8eb259"
+          image: {{ default "quay.io/littlemanco/apache-php:f8eb259" .Values.container | quote }}
           imagePullPolicy: "IfNotPresent"
           # args:
           #   - "command"
@@ -51,7 +52,7 @@ spec:
               protocol: "TCP"
               name: "http"
           volumeMounts:
-            - name: "php"
+            - name: "application"
               mountPath: "/var/www"
           livenessProbe:
             tcpSocket:
