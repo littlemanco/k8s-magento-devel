@@ -30,6 +30,9 @@ help: ## Show this menu
 	@echo -e $(ANSI_TITLE)Commands:$(ANSI_OFF)
 	@grep -E '^[a-zA-Z_-%]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "    \033[32m%-30s\033[0m %s\n", $$1, $$2}'
 
+application: ## Installs all the dependencies required by Magento
+	cd app && composer install
+
 deploy: ## Deploy the chart
 	@if [[ -z "${PERSISTENT_ROOT}" ]]; then echo "Please supply the PERSISTENT_ROOT environment variable" 1>&2 && exit 1; fi;
 	@if [[ -z "${MYSQL_PASSWORD}" ]]; then echo "Please supply the MYSQL_PASSWORD environment variable" 1>&2 && exit 1; fi;

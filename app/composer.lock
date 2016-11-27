@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "95850ce1e40a0810239a8137c2be7aa2",
-    "content-hash": "4b072267d5ea3dcb3f2120896e96a238",
+    "hash": "4c62f33fc198eed54465036d08fba6fe",
+    "content-hash": "bf118f07dda5c443c149df1416f8f257",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -81,12 +81,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/littlemanco/magento-prometheus.git",
-                "reference": "cd6ad42d733a2159bb7fb66f6e50ac2dfb12305c"
+                "reference": "cdc9464286c53cd6b399f566cf6cd9a221f93e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/littlemanco/magento-prometheus/zipball/cd6ad42d733a2159bb7fb66f6e50ac2dfb12305c",
-                "reference": "cd6ad42d733a2159bb7fb66f6e50ac2dfb12305c",
+                "url": "https://api.github.com/repos/littlemanco/magento-prometheus/zipball/cdc9464286c53cd6b399f566cf6cd9a221f93e62",
+                "reference": "cdc9464286c53cd6b399f566cf6cd9a221f93e62",
                 "shasum": ""
             },
             "archive": {
@@ -97,7 +97,7 @@
                     ".arclint"
                 ]
             },
-            "type": "library",
+            "type": "magento-module",
             "autoload": {
                 "psr-4": {
                     "littlemanco\\": "src/"
@@ -122,7 +122,7 @@
                 "wiki": "https://github.com/littlemanco/magento-prometheus/wiki",
                 "source": "https://github.com/littlemanco/magento-prometheus"
             },
-            "time": "2016-11-27 16:48:44"
+            "time": "2016-11-27 20:20:31"
         }
     ],
     "packages-dev": [],
