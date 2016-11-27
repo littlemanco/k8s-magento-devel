@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad23e16ded9b0462d9190131c4cd3af4",
-    "content-hash": "afb168f467964495cbf716715de3c99e",
+    "hash": "95850ce1e40a0810239a8137c2be7aa2",
+    "content-hash": "4b072267d5ea3dcb3f2120896e96a238",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -74,12 +74,63 @@
             ],
             "description": "Magento CE",
             "time": "2016-11-15 14:32:08"
+        },
+        {
+            "name": "littlemanco/magento-prometheus",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/littlemanco/magento-prometheus.git",
+                "reference": "cd6ad42d733a2159bb7fb66f6e50ac2dfb12305c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/littlemanco/magento-prometheus/zipball/cd6ad42d733a2159bb7fb66f6e50ac2dfb12305c",
+                "reference": "cd6ad42d733a2159bb7fb66f6e50ac2dfb12305c",
+                "shasum": ""
+            },
+            "archive": {
+                "exclude": [
+                    "test",
+                    "hack",
+                    "hooks",
+                    ".arclint"
+                ]
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "littlemanco\\": "src/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Howden",
+                    "email": "hello[at]andrewhowden.com",
+                    "homepage": "https://www.andrewhowden.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Expose some service level Magento metrics on Prometheus",
+            "homepage": "https://github.com/littlemanco/magento-prometheus/",
+            "support": {
+                "email": "hello[at]andrewhowden.com",
+                "issues": "https://github.com/littlemanco/magento-prometheus/issues",
+                "wiki": "https://github.com/littlemanco/magento-prometheus/wiki",
+                "source": "https://github.com/littlemanco/magento-prometheus"
+            },
+            "time": "2016-11-27 16:48:44"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "littlemanco/magento-prometheus": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
