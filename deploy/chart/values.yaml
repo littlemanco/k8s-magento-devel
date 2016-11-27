@@ -1,8 +1,9 @@
 ---
-# Values that override the dependency defaults
 mysql:
   imageTag: "5.7.16"
+  ## The path to the persistent data on disk
+  ## A good default is "/mnt/{{ release-name }}/mysql"
+  # path:
 
-## Which directory will be mounted into the apache container at runtime
-## default: /mnt/development
-# hostPath:
+# app:
+#   path:

@@ -1,2 +1,5 @@
 # Do not track dependencies for helm
 /deploy/chart/charts
+
+# Do not track local.xml files
+etc
