@@ -1,0 +1,34 @@
+{
+    "name": "littlemanco/magento",
+    "description": "A sample Magento project deployed on k8s locally",
+    "version": "1.0.0",
+    "type": "project",
+    "homepage": "https://github.com/littlemanco/k8s-magento-devel",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "[Andrew Howden]: The authors name",
+            "email": "[hello[at]andrewhowden.com]: Where to contact the author",
+            "homepage": "[https://www.andrewhowden.com/]: The authors homepage",
+            "role": "[Developer]: The authors job role"
+        }
+    ],
+    "support": {
+        "email": "[hello[at]andrewhowden.com]: Where to contact the author",
+        "issues": "https://github.com/littlemanco/k8s-magento-devel/issues",
+        "wiki": "https://github.com/littlemanco/k8s-magento-devel/wiki",
+        "source": "https://github.com/littlemanco/k8s-magento-devel"
+    }, 
+    "require": {
+    },
+    "require-dev": {
+    },
+    "archive": {
+        "exclude": [
+            "test",
+            "hack",
+            "hooks",
+            ".arclint"
+        ]
+    }
+}
