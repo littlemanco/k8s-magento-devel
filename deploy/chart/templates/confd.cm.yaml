@@ -5,5 +5,8 @@ metadata:
   name: "apache-confd"
 data:
   99-custom.conf: |
+    # Define the vhost
+    Define domain magento-prometheus.local
+
     # Include the vhosts for the application
-    Include /var/www/html/etc/apache2/
+    Include /var/www/etc/apache2/*
