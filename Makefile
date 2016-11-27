@@ -33,4 +33,4 @@ help: ## Show this menu
 deploy: ## Deploy the chart
 	@if [[ -z "${PERSISTENT_ROOT}" ]]; then echo "Please supply the PERSISTENT_ROOT environment variable" 1>&2 && exit 1; fi;
 	@if [[ -z "${MYSQL_PASSWORD}" ]]; then echo "Please supply the MYSQL_PASSWORD environment variable" 1>&2 && exit 1; fi;
-	helm upgrade --install magento-prometheus --set="mysql.mysqlRootPassword=${MYSQL_PASSWORD},app.path=${PERSISTENT_ROOT}/app,mysql.path=${PERSISTENT_ROOT}/mysql" deploy/chart/
+	helm upgrade --debug --install  magento-prometheus --set="mysql.mysqlRootPassword=${MYSQL_PASSWORD},app.path=${PERSISTENT_ROOT}/app,mysql.path=${PERSISTENT_ROOT}/mysql" deploy/chart/
