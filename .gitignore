@@ -5,5 +5,5 @@
 etc
 
 # Don't track packaged files
-app
-vendor
+app/public
+app/vendor
