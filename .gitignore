@@ -3,3 +3,7 @@
 
 # Do not track local.xml files
 etc
+
+# Don't track packaged files
+app
+vendor

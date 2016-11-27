@@ -7,22 +7,30 @@
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "[Andrew Howden]: The authors name",
-            "email": "[hello[at]andrewhowden.com]: Where to contact the author",
-            "homepage": "[https://www.andrewhowden.com/]: The authors homepage",
-            "role": "[Developer]: The authors job role"
+            "name": "Andrew Howden",
+            "email": "hello@andrewhowden.com",
+            "homepage": "https://www.andrewhowden.com/",
+            "role": "Developer"
         }
     ],
     "support": {
-        "email": "[hello[at]andrewhowden.com]: Where to contact the author",
+        "email": "hello@andrewhowden.com",
         "issues": "https://github.com/littlemanco/k8s-magento-devel/issues",
         "wiki": "https://github.com/littlemanco/k8s-magento-devel/wiki",
         "source": "https://github.com/littlemanco/k8s-magento-devel"
-    }, 
+    },
     "require": {
+        "aydin-hassan/magento-core-composer-installer": "^1.3",
+        "firegento/magento": "~1.9.3.1"
     },
     "require-dev": {
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:AydinHassan/magento-community.git"
+        }
+    ],
     "archive": {
         "exclude": [
             "test",
@@ -30,5 +38,8 @@
             "hooks",
             ".arclint"
         ]
+    },
+    "extra": {
+        "magento-root-dir": "app"
     }
 }

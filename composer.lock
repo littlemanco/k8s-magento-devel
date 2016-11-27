@@ -1,0 +1,87 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ad23e16ded9b0462d9190131c4cd3af4",
+    "content-hash": "afb168f467964495cbf716715de3c99e",
+    "packages": [
+        {
+            "name": "aydin-hassan/magento-core-composer-installer",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AydinHassan/magento-core-composer-installer.git",
+                "reference": "0c75cefa55595154a03a9c25f69a7a2fc1319be7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AydinHassan/magento-core-composer-installer/zipball/0c75cefa55595154a03a9c25f69a7a2fc1319be7",
+                "reference": "0c75cefa55595154a03a9c25f69a7a2fc1319be7",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~1.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0@dev",
+                "mikey179/vfsstream": "~1.4",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "\\AydinHassan\\MagentoCoreComposerInstaller\\CoreManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "AydinHassan\\MagentoCoreComposerInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aydin Hassan",
+                    "email": "aydin@hotmail.co.uk"
+                }
+            ],
+            "description": "A composer plugin for managing Magento Core",
+            "time": "2015-09-07 22:38:45"
+        },
+        {
+            "name": "firegento/magento",
+            "version": "v1.9.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firegento/magento.git",
+                "reference": "93562d3984380a76ba98ab4dee1ff2e51ec37b52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firegento/magento/zipball/93562d3984380a76ba98ab4dee1ff2e51ec37b52",
+                "reference": "93562d3984380a76ba98ab4dee1ff2e51ec37b52",
+                "shasum": ""
+            },
+            "type": "magento-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Magento CE",
+            "time": "2016-11-15 14:32:08"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

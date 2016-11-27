@@ -5,6 +5,12 @@
       "include": "(\\.(yaml|yml)$)",
       "script-and-regex.script": "sh -c '/usr/bin/yamllint -f parsable \"$0\" || true'",
       "script-and-regex.regex": "/^(?P<file>[A-z\\.\\/]+):(?P<line>[0-9]+):(?P<char>[0-9]+):\\s\\[(?P<severity>[a-z]+)\\]\\s(?P<message>.*)\\((?P<name>.*)\\)$/m"
+    },
+    "jsonlint": {
+      "type": "script-and-regex",
+      "include": "(\\.json$)",
+      "script-and-regex.script": "sh -c 'jsonlint --compact --quiet \"$0\" 2>&1 || true'",
+      "script-and-regex.regex": "/^(?P<message>.*)$/m"
     }
   }
 }
