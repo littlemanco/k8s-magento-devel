@@ -4,6 +4,13 @@ mysql:
   ## The path to the persistent data on disk
   ## A good default is "/mnt/{{ release-name }}/mysql"
   # path:
+  ## Use a custom storage type to indicate to the cluster where we should bind this resource
+  persistence:
+    storageClass: "mysql"
 
-# app:
-#   path:
+app:
+  ## The path to the application on the host path
+  ## A good default is "/mnt/{{ release-name }}/app"
+  # path:
+  ## Use a custom storage type to indicate to the cluster where we should bind this resource
+  persistence:
