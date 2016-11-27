@@ -1,5 +1,5 @@
 ---
 dependencies:
   - name: "mysql"
-    version: "0.2.1"
-    repository: "https://storage.googleapis.com/kubernetes-charts/"
+    version: "0.2.2"
+    repository: "http://127.0.0.1:8879/charts"
