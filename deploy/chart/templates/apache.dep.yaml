@@ -60,7 +60,7 @@ spec:
           volumeMounts:
             - name: "application"
               mountPath: "/var/www"
-            - name: "apache-confd"
+            - name: "apache-config"
               mountPath: "/etc/apache2/conf-enabled"
           livenessProbe:
             tcpSocket:
